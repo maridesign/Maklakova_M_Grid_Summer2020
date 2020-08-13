@@ -1,7 +1,7 @@
 # Maklakova_M_Grid_Summer2020
 
 #Description
-Futute Team Page for Maklakova and Wells
+This Site is about two visual designers, Maria Maklakova and Selana Wells. You get some personal information, look at porfolio and get in touch with them.
 
 #Installation
 No installation required

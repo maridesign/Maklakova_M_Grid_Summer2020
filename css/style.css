@@ -20,10 +20,12 @@ body {
 
 .grayPinkBg {
     background: #A79798;
+    padding: 6em 0;
 }
 
 .grayBg {
     background: #80797B;
+    padding: 20px 0;
 }
 
 header, footer {
@@ -63,7 +65,7 @@ a {
     opacity: 0;
 }
 
-  /* button style */
+  /* стилизуем кнопку */
 .menu__btn {
     display: flex;
     align-items: center;
@@ -76,7 +78,7 @@ a {
     z-index: 1;
 }
 
-  /* hamburger menu */
+  /* добавляем "гамбургер" */
 .menu__btn > span,
 .menu__btn > span::before,
 .menu__btn > span::after {
@@ -98,7 +100,7 @@ a {
     top: 8px;
 }
 
-  /* container menu */
+  /* контейнер меню */
 .menu__box {
     display: block;
     position: fixed;
@@ -116,7 +118,7 @@ a {
     transition: all ease 0.5s;
 }
 
-  /* menu elements */
+  /* элементы меню */
 .menu__item {
     display: block;
     padding: 12px 24px;
@@ -177,16 +179,6 @@ a {
     border-radius: 50%;
 }
 
-.wrap {
-    padding: 20px 0;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-}
-
 .cardWrap {
     display: grid;
     grid-template-columns: 1fr;
@@ -213,8 +205,12 @@ footer .box {
     left: 10px;
 }
 
-.card__inner {
-    background-color: #A9A8A9;
+.card-inner {
+    margin: 0 30%;
+    background-color: #af70a0;
+    padding: 20px 0;
+    border: 1px solid #64585A;
+    margin: 0 30%;;
     padding: 20px;
     display: flex;
     flex-direction: row;
@@ -222,14 +218,63 @@ footer .box {
     justify-content: center;
     align-content: center;
     align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
 }
+
+/* ===== flip card ===== */
+
+.card {
+    background-color: transparent;
+    width: 220px;
+    height: 300px;
+    perspective: 1000px;
+}
+
+.card:hover .card-inner {
+    transform: rotateY(180deg);
+    border: none;
+}
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    /* height: 100%; */
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+.card-front {
+    color: #111111;
+    
+}
+.card-back {
+    background-color: #facbcc;
+    border: 1px solid #64585A;
+    color: #eeeeee;
+    transform: rotateY(180deg);
+    padding: 15px 0;
+}
+
+.card-back p {
+    margin: 20px 0;
+}
+
+/* ===== flip card end ===== */
 
 p {
     padding: 20px;
     background-color: #facbcc;
     color: #fff;
     line-height: 1.5;
-    margin-top: 20px;
+    margin: 20px;
 }
 
 .flexWrap {
@@ -278,6 +323,17 @@ ul li {
 .expertDescription {
     border: none;
     display: none;
+}
+
+svg {
+    flex: 1;
+    width: 250px;
+}
+
+.path {
+    stroke-dasharray: 400;
+    stroke-dashoffset: 400;
+    animation: dash 5s linear forwards;
 }
 
 @media screen and (min-width: 992px) {
