@@ -20,12 +20,17 @@ body {
 
 .grayPinkBg {
     background: #A79798;
-    padding: 6em 0;
+    padding: 2em 0;
 }
 
 .grayBg {
     background: #80797B;
-    padding: 20px 0;
+    padding: 2em 0;
+}
+
+.pinkBg {
+    background: #e5cccf;
+    padding: 20px 0 5em 0;
 }
 
 header, footer {
@@ -38,7 +43,27 @@ header, footer {
 }
 
 footer {
-    padding-bottom: 30px;
+    padding-top: 60px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1px 1px;
+    grid-template-areas: "." ".";
+    justify-items: center;
+    align-items: center;
+}
+
+footer .socialWrap {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1px 1px;
+    grid-template-areas: "." ".";
+    justify-items: center;
+}
+
+.copywrite {
+    margin-top: 20px;
 }
 
 nav {
@@ -56,6 +81,7 @@ ul {
 
 a {
     text-decoration: none;
+    text-transform: uppercase;
     color: inherit;
 }
 
@@ -65,20 +91,20 @@ a {
     opacity: 0;
 }
 
-  /* стилизуем кнопку */
+  /* button style */
 .menu__btn {
     display: flex;
     align-items: center;
     position: fixed;
-    top: 25px;
+    top: 55px;
     left: 20px;
     width: 26px;
     height: 26px;
     cursor: pointer;
-    z-index: 1;
+    z-index: 10;
 }
 
-  /* добавляем "гамбургер" */
+  /* humburger */
 .menu__btn > span,
 .menu__btn > span::before,
 .menu__btn > span::after {
@@ -100,7 +126,7 @@ a {
     top: 8px;
 }
 
-  /* контейнер меню */
+  /* container menu */
 .menu__box {
     display: block;
     position: fixed;
@@ -116,9 +142,10 @@ a {
     background-color: #A79798;
     box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
     transition: all ease 0.5s;
+    z-index: 5;
 }
 
-  /* элементы меню */
+  /* menu elements */
 .menu__item {
     display: block;
     padding: 12px 24px;
@@ -147,8 +174,6 @@ a {
     opacity: 0;
 }
 
-
-
 /* =========== burger-menu end =========== */
 
 .socialMedia {
@@ -162,14 +187,14 @@ a {
 }
 
 .socialMedia__item {
-    width: 25px;
-    height: 25px;
-    background-color: #fff;
-    margin: 0 10px;
-    border-radius: 50%;
     order: 0;
     flex: 0 1 auto;
     align-self: auto;
+}
+
+.socialMedia__item img {
+    width: 27px;
+    margin-left: 7px;
 }
 
 .box {
@@ -182,10 +207,13 @@ a {
 .cardWrap {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
+    grid-template-rows: 1fr 1fr;
     gap: 1px 1px;
-    grid-template-areas: ".";
+    grid-template-areas: "." ".";
     padding: 20px 0;
+    justify-items: center;
+    align-items: center;
+    overflow: visible;
 }
 
 .boxMax {
@@ -196,7 +224,13 @@ a {
     border: 4px solid #93898E;
     line-height: 90px;
     text-align: center;
-    margin: 0 -215px;
+    margin: 20px auto;
+    color: #a79798;
+    text-transform: uppercase;
+}
+
+.title {
+    margin-top: -75px;
 }
 
 footer .box {
@@ -206,11 +240,6 @@ footer .box {
 }
 
 .card-inner {
-    margin: 0 30%;
-    background-color: #af70a0;
-    padding: 20px 0;
-    border: 1px solid #64585A;
-    margin: 0 30%;;
     padding: 20px;
     display: flex;
     flex-direction: row;
@@ -231,8 +260,16 @@ footer .box {
 .card {
     background-color: transparent;
     width: 220px;
-    height: 300px;
+    height: 340px;
     perspective: 1000px;
+}
+
+.card svg {
+    width: 500px;
+}
+
+.card:nth-child(2) {
+    height: 60px;
 }
 
 .card:hover .card-inner {
@@ -242,7 +279,6 @@ footer .box {
 .card-front, .card-back {
     position: absolute;
     width: 100%;
-    /* height: 100%; */
     backface-visibility: hidden;
     display: flex;
     flex-direction: column;
@@ -251,30 +287,33 @@ footer .box {
     align-content: center;
     align-items: center;
 }
-.card-front {
-    color: #111111;
-    
+.card-front p {
+    color: #a79798;
+    font-size: 1.75em;
 }
+
 .card-back {
-    background-color: #facbcc;
-    border: 1px solid #64585A;
+    width: 550px;
+    color: #fff;
+    background-color: #64585a;
+    border-radius: 10px;
     color: #eeeeee;
     transform: rotateY(180deg);
-    padding: 15px 0;
+    padding: 20px;
+    /* margin-bottom: 50px; */
+    margin: 100px 0;
 }
 
 .card-back p {
-    margin: 20px 0;
+    text-transform: none;
 }
 
 /* ===== flip card end ===== */
 
 p {
-    padding: 20px;
-    background-color: #facbcc;
     color: #fff;
     line-height: 1.5;
-    margin: 20px;
+    text-transform: uppercase;
 }
 
 .flexWrap {
@@ -293,36 +332,74 @@ p {
     margin: auto;
 }
 
-ul {
-    border: 10px solid #64585A;
-}
-
 ul li {
     padding: 15px;
     color: #fff;
-    background: #facbcc;
+    text-transform: uppercase;
 }
 
-.wrapGallery {
-    padding: 20px 0;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-}
+/* ====== gallery ===== */
 
 .gallery {
-    width: 230px;
-    height: 120px;
-    background-color: #64585A;
-    margin: 10px auto;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 5vw);
+    grid-gap: 15px;
+    margin-top: 35px;
 }
 
+.gallery__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery__item-1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.gallery__item-2 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.gallery__item-3 {
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 6;
+}
+
+.gallery__item-4 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 6;
+}
+
+.gallery__item-5 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 6;
+    grid-row-end: 9;
+}
+
+.gallery__item-6 {
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 6;
+    grid-row-end: 9;
+}
+
+/* ====== gallery end ====== */
+
 .expertDescription {
-    border: none;
-    display: none;
+    margin-bottom: 20px;
 }
 
 svg {
@@ -336,6 +413,81 @@ svg {
     animation: dash 5s linear forwards;
 }
 
+.gridWrap {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1px 1px;
+    grid-template-areas: "." ".";
+    justify-items: center;
+    align-items: center;
+}
+
+.copywrite {
+    text-transform: none;
+}
+
+
+img[alt='photo'] {
+    width: 100%;
+}
+
+img[alt='image-gallery'] {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+/* =========== logo ============= */
+
+#logo {
+    margin-top: -145px;
+    border: 4px solid #93898E;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    margin-bottom: 60px;
+}
+
+.letter {
+    animation: letter 5s linear forwards;
+}
+
+#_1heart, #_2heart, #_3heart {animation: fadeheart 0.8s forwards;opacity: 0;}
+
+#_1heart { animation-delay: 3s; }
+#_2heart { animation-delay: 3.5s; }
+#_3heart { animation-delay: 4s; }
+
+@keyframes fadeheart {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+  
+@keyframes dash {
+    to {
+        stroke-dashoffset: 1000;
+    }
+}
+
+@keyframes letter {
+    from {
+        fill: #f49ac1;
+    }
+
+    to {
+        fill: #b99ac8;
+    }
+}
+
+/* =========== logo end ============= */
+
 @media screen and (min-width: 992px) {
     .cardWrap {
         display: grid;
@@ -343,6 +495,23 @@ svg {
         grid-template-rows: 1fr;
         gap: 1px 1px;
         grid-template-areas: ". .";
+        justify-items: center;
+        align-items: center;
+        padding-bottom: 50px;
+    }
+
+    .card-back {
+        min-height: 420px;
+    }
+
+    .gridWrap {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 1px 1px;
+        grid-template-areas: ". .";
+        justify-items: center;
+        align-items: center;
     }
 
     nav, .expertDescription {
@@ -364,11 +533,25 @@ svg {
         display: none;
     }
 
-    .wrapGallery {
-        flex-direction: row;
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 1px 1px;
+        grid-template-areas: ". .";
+        justify-items: stretch;
     }
 
     .socialMedia {
         top: 10px;
+    }
+
+    footer .socialWrap {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 1px 1px;
+        grid-template-areas: "." ".";
+        justify-items: end;
     }
 }
