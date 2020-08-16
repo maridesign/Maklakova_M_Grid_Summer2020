@@ -20,23 +20,22 @@
                             <span></span>
                         </label>
                         <ul class="menu__box">
-                            <li><a class="menu__item" href="#">Menu-item</a></li>
-                            <li><a class="menu__item" href="#">Menu-item</a></li>
-                            <li><a class="menu__item" href="#">Menu-item</a></li>
-                            <li><a class="menu__item" href="#">Menu-item</a></li>
-                            <li><a class="menu__item" href="#">Menu-item</a></li>
+                            <li><a class="menu__item" href="#skills">Skills</a></li>
+                            <li><a class="menu__item" href="#works">Works</a></li>
+                            <li><a class="menu__item" href="#contacts">Contact</a></li>
                         </ul>
                     </div>
                     <div class="socialMedia">
-                        <div class="socialMedia__item"></div>
-                        <div class="socialMedia__item"></div>
-                        <div class="socialMedia__item"></div>
+                        <div class="socialMedia__item"><img src="images/ico.png" alt="social-ico"></div>
+                        <div class="socialMedia__item"><img src="images/instagram.png" alt="social-ico"></div>
+                        <div class="socialMedia__item"><img src="images/facebook.png" alt="social-ico"></div>
+                        <div class="socialMedia__item"><img src="images/telegram.png" alt="social-ico"></div>
                     </div>
                     <nav>
                         <ul>
-                            <li><a href="#">Gallery</a></li>
-                            <li><a href="#">Skills</a></li>
-                            <li><a href="#">Contacts</a></li>
+                            <li><a href="#skills">Skills</a></li>
+                            <li><a href="#works">Works</a></li>
+                            <li><a href="#contacts">Contact</a></li>
                         </ul>
                     </nav>
                 </header>
@@ -44,37 +43,54 @@
         </div>
     </div>
 
-    <div class="grayBg">
+    <div class="pinkBg">
         <div class="container">
             <div class="row">
-                <div class="wrap">
-                    <div class="boxMax">Logo</div>
+                <div class="wrap textCenter">
+                    <svg id="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 155.52 129.54">
+                        <title>logo</title>
+                        <path id="letter_m"
+                            d="M54.91,56H52.19l5.66-42.32a11.22,11.22,0,0,1,1-3.41A2.7,2.7,0,0,1,61.48,9a3.46,3.46,0,0,1,3.36,2.58q3.43,10.82,6.8,22.62L76,49.39c.78,2.72,1.35,4.15,1.7,4.28.39,0,.74-.72,1-2L90.1,13.06a20.51,20.51,0,0,1,1.51-3.42A2,2,0,0,1,93.39,9h.72q2.56,0,3.36,3.95L103.39,56h-2.85L94.76,13.07A2.35,2.35,0,0,0,94.53,12a.73.73,0,0,0-.69-.45c-.52,0-.94.7-1.24,2.11L80.88,53.8c-.48,1.8-1.42,2.7-2.83,2.7-1.71,0-2.79-.61-3.22-1.84l-12.3-42c-.27-.7-.58-1.07-.93-1.12s-.83.75-1.05,2.24Z"
+                            fill="#b99ac8" class="letter" />
+                        <path id="letter_w"
+                            d="M60.55,115.75c.22,1.49.57,2.24,1.05,2.24s.66-.42.93-1.12l12.3-42c.43-1.23,1.51-1.84,3.22-1.84,1.41,0,2.35.9,2.83,2.7L92.6,115.88c.3,1.41.72,2.11,1.24,2.11a.73.73,0,0,0,.69-.45,2.35,2.35,0,0,0,.23-1.07l5.78-42.91h2.85l-5.92,43.05q-.8,3.94-3.36,4h-.72a2,2,0,0,1-1.78-.66,20.51,20.51,0,0,1-1.51-3.42L78.7,77.91c-.3-1.32-.65-2-1-2-.35.13-.92,1.55-1.7,4.28L71.64,95.36q-3.37,11.81-6.8,22.62a3.46,3.46,0,0,1-3.36,2.58,2.7,2.7,0,0,1-2.64-1.27,11.22,11.22,0,0,1-1-3.41L52.19,73.56h2.72Z"
+                            fill="#b99ac8" class="letter" />
+                        <path id="greenline"
+                            d="M154.78,64.32s-11.21,12.11-22.93.35-20.69-.13-20.69-.13-11,11.63-22.72-.12-20.83-.2-20.83-.2-11.22,12.11-22.94.35c-9-9-16.89-4.78-19.27-1.62-4,5.29-16.74,10.7-24.61.48"
+                            class="path" fill="none" stroke="#8dc640" stroke-miterlimit="10" stroke-width="2" />
+                        <path id="_3heart" data-name="3heart"
+                            d="M102.74,66.23V62c.44-4.35,3.57-4,4.07-2.26S102.74,66.23,102.74,66.23ZM98,59.74c-.49,1.76,4.07,6.49,4.07,6.49V62C101.66,57.65,98.53,58,98,59.74Z"
+                            fill="#f49ac1" class="heart" />
+                        <path id="_2heart" data-name="2heart"
+                            d="M81.91,68.9c-.5,1.76-3.63,2.09-4.07-2.25V62.41S82.4,67.14,81.91,68.9ZM77.2,66.65V62.41s-4.57,4.73-4.07,6.49S76.76,71,77.2,66.65Z"
+                            fill="#f49ac1" />
+                        <path id="_1heart" data-name="1heart"
+                            d="M53.13,66.62V62.38c.44-4.34,3.57-4,4.07-2.25S53.13,66.62,53.13,66.62Zm-4.71-6.49c-.5,1.76,4.07,6.49,4.07,6.49V62.38C52.05,58,48.91,58.37,48.42,60.13Z"
+                            fill="#f49ac1" />
+                    </svg>
                 </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="grayPinkBg">
-        <div class="container">
-            <div class="row">
                 <div class="cardWrap">
                     <div class="card">
                         <div class="card-inner">
                             <div class="card-front">
                                 <svg id="logo_m" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 155.52 70">
-                                    <path id="letter_m"
+                                    <path
                                         d="M54.91,56H52.19l5.66-42.32a11.22,11.22,0,0,1,1-3.41A2.7,2.7,0,0,1,61.48,9a3.46,3.46,0,0,1,3.36,2.58q3.43,10.82,6.8,22.62L76,49.39c.78,2.72,1.35,4.15,1.7,4.28.39,0,.74-.72,1-2L90.1,13.06a20.51,20.51,0,0,1,1.51-3.42A2,2,0,0,1,93.39,9h.72q2.56,0,3.36,3.95L103.39,56h-2.85L94.76,13.07A2.35,2.35,0,0,0,94.53,12a.73.73,0,0,0-.69-.45c-.52,0-.94.7-1.24,2.11L80.88,53.8c-.48,1.8-1.42,2.7-2.83,2.7-1.71,0-2.79-.61-3.22-1.84l-12.3-42c-.27-.7-.58-1.07-.93-1.12s-.83.75-1.05,2.24Z"
-                                        fill="#b99ac8" class="letter" />
+                                        fill="#b99ac8" />
                                 </svg>
-                                <p>Maclakova</p>
+                                <p>Maklakova</p>
                             </div>
                             <div class="card-back">
-                                <div class="boxMax"></div>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas, illo animi. Aut
-                                    harum,
-                                    aliquid, alias accusantium aliquam itaque quia repellendus facilis eveniet qui
-                                    asperiores
-                                    eaque placeat, nihil corrupti ea eum!</p>
+                                <div class="boxMax"><img src="images/Maria.png" alt="photo"></div>
+                                <p>Hi!
+I’m Maria! I am Photographer, Painter, and an Interactive Media Design
+Student at Fanshawe College. I was born in Siberia, lived in Moscow, Russia, and moved around the world quiet a bit. I lived in Israel and Finland before settling in Canada a few years ago.
+I see take my ideas from our everyday life and express beauty of the world through visual arts. I have a passion for photography and painting, I also love brand design and character design, video and photo editing. I am
+currently working on adding 3D modeling, prototyping and web
+development knowledge to my skills set. 
+I am happy to present my portfolio, check it out! Thank you for visiting,
+I would love to hear from you! 
+                                                                                                                    Maria</p>
                             </div>
                         </div>
                     </div>
@@ -83,19 +99,15 @@
                         <div class="card-inner">
                             <div class="card-front">
                                 <svg id="logo_w" xmlns="http://www.w3.org/2000/svg" viewBox="0 65 155.52 70">
-                                    <path id="letter_w"
+                                    <path
                                         d="M60.55,115.75c.22,1.49.57,2.24,1.05,2.24s.66-.42.93-1.12l12.3-42c.43-1.23,1.51-1.84,3.22-1.84,1.41,0,2.35.9,2.83,2.7L92.6,115.88c.3,1.41.72,2.11,1.24,2.11a.73.73,0,0,0,.69-.45,2.35,2.35,0,0,0,.23-1.07l5.78-42.91h2.85l-5.92,43.05q-.8,3.94-3.36,4h-.72a2,2,0,0,1-1.78-.66,20.51,20.51,0,0,1-1.51-3.42L78.7,77.91c-.3-1.32-.65-2-1-2-.35.13-.92,1.55-1.7,4.28L71.64,95.36q-3.37,11.81-6.8,22.62a3.46,3.46,0,0,1-3.36,2.58,2.7,2.7,0,0,1-2.64-1.27,11.22,11.22,0,0,1-1-3.41L52.19,73.56h2.72Z"
-                                        fill="#b99ac8" class="letter" />
+                                        fill="#b99ac8" />
                                 </svg>
                                 <p>Wells</p>
                             </div>
                             <div class="card-back">
-                                <div class="boxMax"></div>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas, illo animi. Aut
-                                    harum,
-                                    aliquid, alias accusantium aliquam itaque quia repellendus facilis eveniet qui
-                                    asperiores
-                                    eaque placeat, nihil corrupti ea eum!</p>
+                                <div class="boxMax"><img src="images/Selena.png" alt="photo"></div>
+                                <p>Hi, my name is Selena. I am a crazy and quirky artist passionate about creating experiences for people through art. I am a graduate of the Video Game Design and Development Program at Fanshawe College in London, Ontario and am currently enrolled in the Interactive Media Design program also at Fanshawe. I love everything design from wireframing to modeling and animating product shots. While I will always love art and design, I also have an interest in the more technical side of websites and hope to become well versed in front-end web development by the end of school. In my free time I like to watch horror movies, draw/paint and experience nature. I also have a cat named Georgie after the little boy in the horror movie IT. I love her very much. Thanks for taking the time to learn a little bit about me! Cheers.</p>
                             </div>
                         </div>
                     </div>
@@ -104,10 +116,11 @@
         </div>
     </div>
 
-    <div class="grayBg">
+    <div class="grayBg" id="skills">
         <div class="container">
             <div class="row">
-                <div class="flexWrap">
+                <div class="boxMax title">Skills</div>
+                <div class="gridWrap textCenter">
                     <div>
                         <ul class="expertDescription">
                             <li>Prototyping</li>
@@ -115,7 +128,6 @@
                             <li>Photography</li>
                         </ul>
                     </div>
-                    <div class="boxMax"></div>
                     <div>
                         <ul class="expertDescription">
                             <li>3D modeling</li>
@@ -128,47 +140,60 @@
         </div>
     </div>
 
-    <div class="grayPinkBg">
+    <div class="grayPinkBg" id="works">
         <div class="container">
             <div class="row">
-                <div class="ulWrap">
-                    <ul>
-                        <li>Prototyhing</li>
-                        <li>Prototyhing</li>
-                        <li>Prototyhing</li>
-                        <li>Prototyhing</li>
-                        <li>Prototyhing</li>
-                    </ul>
+                <div class="boxMax title">Works</div>
+                <div class="gallery">
+                    <div class="gallery__item gallery__item-1">
+                        <div class="gallery__img"><img src="images/gal2.jpg" alt="image-gallery"></div>
+                    </div>
+                    <div class="gallery__item gallery__item-2">
+                        <div class="gallery__img"><img src="images/gal2.jpg" alt="image-gallery"></div>
+                    </div>
+                    <div class="gallery__item gallery__item-3">
+                        <div class="gallery__img"><img src="images/gal2.jpg" alt="image-gallery"></div>
+                    </div>
+                    <div class="gallery__item gallery__item-4">
+                        <div class="gallery__img"><img src="images/gal2.jpg" alt="image-gallery"></div>
+                    </div>
+                    <div class="gallery__item gallery__item-5">
+                        <div class="gallery__img"><img src="images/gal2.jpg" alt="image-gallery"></div>
+                    </div>
+                    <div class="gallery__item gallery__item-6">
+                        <div class="gallery__img"><img src="images/gal2.jpg" alt="image-gallery"></div>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="grayBg">
-        <div class="container">
-            <div class="row">
-                <div class="flexWrap">
-                    <div class="boxMax"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="grayPinkBg">
-        <div class="container">
-            <div class="row">
-                <div class="wrapGallery">
-                    <div class="gallery"></div>
-                    <div class="gallery"></div>
-                    <div class="gallery"></div>
-                    <div class="gallery"></div>
-                </div>
-                <footer>
-                    <div class="box"></div>
-                    <div class="socialMedia">
-                        <div class="socialMedia__item"></div>
-                        <div class="socialMedia__item"></div>
-                        <div class="socialMedia__item"></div>
+                <footer id="contacts">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 155.52 129.54">
+                        <title>logo</title>
+                        <path
+                            d="M54.91,56H52.19l5.66-42.32a11.22,11.22,0,0,1,1-3.41A2.7,2.7,0,0,1,61.48,9a3.46,3.46,0,0,1,3.36,2.58q3.43,10.82,6.8,22.62L76,49.39c.78,2.72,1.35,4.15,1.7,4.28.39,0,.74-.72,1-2L90.1,13.06a20.51,20.51,0,0,1,1.51-3.42A2,2,0,0,1,93.39,9h.72q2.56,0,3.36,3.95L103.39,56h-2.85L94.76,13.07A2.35,2.35,0,0,0,94.53,12a.73.73,0,0,0-.69-.45c-.52,0-.94.7-1.24,2.11L80.88,53.8c-.48,1.8-1.42,2.7-2.83,2.7-1.71,0-2.79-.61-3.22-1.84l-12.3-42c-.27-.7-.58-1.07-.93-1.12s-.83.75-1.05,2.24Z"
+                            fill="#b99ac8" />
+                        <path
+                            d="M60.55,115.75c.22,1.49.57,2.24,1.05,2.24s.66-.42.93-1.12l12.3-42c.43-1.23,1.51-1.84,3.22-1.84,1.41,0,2.35.9,2.83,2.7L92.6,115.88c.3,1.41.72,2.11,1.24,2.11a.73.73,0,0,0,.69-.45,2.35,2.35,0,0,0,.23-1.07l5.78-42.91h2.85l-5.92,43.05q-.8,3.94-3.36,4h-.72a2,2,0,0,1-1.78-.66,20.51,20.51,0,0,1-1.51-3.42L78.7,77.91c-.3-1.32-.65-2-1-2-.35.13-.92,1.55-1.7,4.28L71.64,95.36q-3.37,11.81-6.8,22.62a3.46,3.46,0,0,1-3.36,2.58,2.7,2.7,0,0,1-2.64-1.27,11.22,11.22,0,0,1-1-3.41L52.19,73.56h2.72Z"
+                            fill="#b99ac8" />
+                        <path
+                            d="M154.78,64.32s-11.21,12.11-22.93.35-20.69-.13-20.69-.13-11,11.63-22.72-.12-20.83-.2-20.83-.2-11.22,12.11-22.94.35c-9-9-16.89-4.78-19.27-1.62-4,5.29-16.74,10.7-24.61.48"
+                            fill="none" stroke="#8dc640" stroke-miterlimit="10" stroke-width="2" />
+                        <path data-name="3heart"
+                            d="M102.74,66.23V62c.44-4.35,3.57-4,4.07-2.26S102.74,66.23,102.74,66.23ZM98,59.74c-.49,1.76,4.07,6.49,4.07,6.49V62C101.66,57.65,98.53,58,98,59.74Z"
+                            fill="#f49ac1" />
+                        <path data-name="2heart"
+                            d="M81.91,68.9c-.5,1.76-3.63,2.09-4.07-2.25V62.41S82.4,67.14,81.91,68.9ZM77.2,66.65V62.41s-4.57,4.73-4.07,6.49S76.76,71,77.2,66.65Z"
+                            fill="#f49ac1" />
+                        <path data-name="1heart"
+                            d="M53.13,66.62V62.38c.44-4.34,3.57-4,4.07-2.25S53.13,66.62,53.13,66.62Zm-4.71-6.49c-.5,1.76,4.07,6.49,4.07,6.49V62.38C52.05,58,48.91,58.37,48.42,60.13Z"
+                            fill="#f49ac1" />
+                    </svg>
+                    <div class="socialWrap">
+                        <div class="socialMedia">
+                            <div class="socialMedia__item"><img src="images/ico.png" alt="social-ico"></div>
+                            <div class="socialMedia__item"><img src="images/instagram.png" alt="social-ico"></div>
+                            <div class="socialMedia__item"><img src="images/facebook.png" alt="social-ico"></div>
+                            <div class="socialMedia__item"><img src="images/telegram.png" alt="social-ico"></div>
+                        </div>
+                        <p class="copywrite">2020 copywrite Maclakova/Wells</p>
                     </div>
                 </footer>
             </div>
@@ -176,8 +201,7 @@
     </div>
 
 
-
-
+    <script src="js/script.js"></script>
 </body>
 
 </html>
