@@ -30,7 +30,7 @@ body {
 
 .pinkBg {
     background: #e5cccf;
-    padding: 20px 0;
+    padding: 20px 0 5em 0;
 }
 
 header, footer {
@@ -91,7 +91,7 @@ a {
     opacity: 0;
 }
 
-  /* стилизуем кнопку */
+  /* button style */
 .menu__btn {
     display: flex;
     align-items: center;
@@ -104,7 +104,7 @@ a {
     z-index: 10;
 }
 
-  /* добавляем "гамбургер" */
+  /* humburger */
 .menu__btn > span,
 .menu__btn > span::before,
 .menu__btn > span::after {
@@ -126,7 +126,7 @@ a {
     top: 8px;
 }
 
-  /* контейнер меню */
+  /* container menu */
 .menu__box {
     display: block;
     position: fixed;
@@ -145,7 +145,7 @@ a {
     z-index: 5;
 }
 
-  /* элементы меню */
+  /* menu elements */
 .menu__item {
     display: block;
     padding: 12px 24px;
@@ -213,6 +213,7 @@ a {
     padding: 20px 0;
     justify-items: center;
     align-items: center;
+    overflow: visible;
 }
 
 .boxMax {
@@ -299,6 +300,8 @@ footer .box {
     color: #eeeeee;
     transform: rotateY(180deg);
     padding: 20px;
+    /* margin-bottom: 50px; */
+    margin: 100px 0;
 }
 
 .card-back p {
@@ -342,11 +345,10 @@ ul li {
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(8, 5vw);
     grid-gap: 15px;
+    margin-top: 35px;
 }
 
 .gallery__img {
-    background-color: #64585A;
-    border-radius: 10px;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -425,10 +427,27 @@ svg {
     text-transform: none;
 }
 
+
+img[alt='photo'] {
+    width: 100%;
+}
+
+img[alt='image-gallery'] {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
 /* =========== logo ============= */
 
 #logo {
-    margin-top: -124px;
+    margin-top: -145px;
+    border: 4px solid #93898E;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    margin-bottom: 60px;
 }
 
 .letter {
@@ -479,6 +498,10 @@ svg {
         justify-items: center;
         align-items: center;
         padding-bottom: 50px;
+    }
+
+    .card-back {
+        min-height: 420px;
     }
 
     .gridWrap {
